@@ -1,5 +1,5 @@
 html {
-	
+	Height: 100%;
 	width: 100%;
 	overflow-x: hidden;
 }
@@ -8,6 +8,7 @@ body
 {
 	margin-left:0px;
 	margin-right:0px;
+Width: 100%;
 }
 
 .bar
@@ -15,7 +16,7 @@ body
 	background:black;
 	height:200px;
 	witdh:100%;
-;	
+	
 }
 
 nav {
