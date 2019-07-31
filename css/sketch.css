@@ -1,73 +1,131 @@
-header {
-	box-sizing: content-box;
+html {
+	
 	width: 100%;
-	background-color:black;
-	padding: 30px;
+	overflow-x: hidden;
 }
-
 
 body
 {
-	height:500px !important;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.bar
+{
+	background:black;
+	height:200px;
+	witdh:100%;
+;	
+}
+
+nav {
+	width: 100%;
+	background-color: #111;
+	top: 0;
+	overflow: hidden;
+	left: 0;
+	position: fixed;
+	display:inline;
+	padding: 4px;
+	z-index: 99;
+	font-family: sans-serif;
+}
+
+ul {
+	float: left;
+	display: inline;
+	padding: 30px 100px;
+	margin: 0px;
+	list-style: none;
+}
+
+li {
+	display:block;
+	width:120px;
+	float:left;
+	margin-left:2px;
+	border:1px solid #000;
+}
+
+li:hover {
+	background-color:black;
+}
+
+li a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color:#009;
+	
+}
+
+li a:hover
+{
+	background-color:black;
+	color:#c0c0c0;
+}
+
+.img1 {
+	border-radius: 50%;
+	width: 10%;
+	display: inline;
+	float: left;
+}
+
+.rotate {
+	animation: rotation 1s 2 linear;
+}
+
+@keyframes rotation 
+{from
+ { transform:rotate(0deg);
+	}
+to {
+	transform: rotate(359deg);
+}
 }
 .content1 {
 	box-sizing: content-box;
 	width: 100%;
 	padding: 15px;
+	background: #c0c0c0;
+	display: block;
 }
 
 .content2 {
-	
-	width: 100%;
-	
-	
+	width: 50%;
+	float: left;
+	display: inline;
+}
+
+.content4 {
+	float: right;
+	width: 50%;
+	display: inline;
 }
 /*  .marquee {
         width: 25%;
         height:200px;
         background-color: lightblue;
  } */
-
 .content3 {
-	
 	width: 100%;
-	
 	text-align: center;
-	padding:50px;
-	
-	margin:50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.img1
-{
-	border-radius:50%;
-	padding:12x;
-	width:15%;
-	
-}
-
-.img2
-{
-	height:300px;
-	with:120px;
+.img2 {
+	height: 300px;
+	width: 150px;
 	margin-left: 10px;
 }
 
-blink {
-	animation: blinker 0.6s linear infinite;
-	color: red;
-}
-
-@
-keyframes blinker { 10% {
-	opacity: 0;
-}
-
-}
 .button {
 	border-radius: 8%;
 	padding: 12px 10px;
-	background-color: #e983da;
+	background-color: #b700b7;
 	color: white;
 	padding: 15px 32px;
 	text-align: center;
@@ -77,83 +135,98 @@ keyframes blinker { 10% {
 }
 
 .button:hover {
-	background-color: #b700b7; /* Green */
+	background-color: #e983da; /* Green */
 	color: white;
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
 		rgba(0, 0, 0, 0.19);
 }
 
-
+footer {
+	width: auto;
+	bottom: o;
+}
 
 .det {
 	float: left;
-	width: 50%;
-	margin:0px;
-    background-color: #c0c0c0; 
-    height:180px;
-    display:inline;
+	width: 40%;
+	margin: 0px;
+	background-color: #c0c0c0;
+	height: 180px;
+	display: inline;
 }
-
-
 
 .deta {
 	float: left;
-	width: 25%;
-	margin:0px;
-background-color: #c0c0c0; 
-height:180px;
-display:inline;
+	width: 35%;
+	margin: 0px;
+	background-color: #c0c0c0;
+	height: 180px;
+	display: inline;
 }
 
 .detal {
 	float: right;
 	width: 25%;
-    margin:0px;
-    height:180px;
-    display:inline;
-    background-color: #c0c0c0; 
+	margin: 0px;
+	height: 180px;
+	display: inline;
+	background-color: #c0c0c0;
 }
-
-
-
 
 /* animations */
-
 .marquee {
-  background-color: #ddd;
-  width: 500px;
-  margin: 0 auto;
-  overflow: hidden;
-  white-space: nowrap;
+	background-color: #ddd;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
 }
+
 .marquee span {
-  display: inline-block;
-  font-size: 20px;
-  position: relative;
-  left: 100%;
-  animation: marquee 8s linear infinite;
+	display: inline-block;
+	font-size: 20px;
+	position: relative;
+	left: 100%;
+	animation: marquee 12s linear infinite;
 }
+
 .marquee:hover span {
-  animation-play-state: paused;
+	animation-play-state: paused;
 }
 
 .marquee span:nth-child(1) {
-  animation-delay: 0s;
+	animation-delay: 0s;
 }
+
 .marquee span:nth-child(2) {
-  animation-delay: 0.8s;
+	animation-delay: 0.8s;
 }
+
 .marquee span:nth-child(3) {
-  animation-delay: 1.6s;
+	animation-delay: 1.6s;
 }
+
 .marquee span:nth-child(4) {
-  animation-delay: 2.4s;
+	animation-delay: 2.4s;
 }
+
 .marquee span:nth-child(5) {
-  animation-delay: 3.2s;
+	animation-delay: 3.2s;
+}
+
+.marquee span:nth-child(6) {
+	animation-delay: 4.0s;
+}
+
+.marquee span:nth-child(7) {
+	animation-delay: 4.8s;
+}
+
+.marquee span:nth-child(8) {
+	animation-delay: 5.6s;
 }
 
 @keyframes marquee {
-  0%   { left: 100%; }
-  100% { left: -100%; }
-}
+	0% { left: 100%; }
+  100%{  left:-100%;}
+  }
