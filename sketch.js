@@ -3,7 +3,7 @@
 /*footer responsive*/
 
 $(window).resize (function() {
-    if($(window).width() < 400) {
+    if($(window).width() < 500) {
         $('#contact').addClass('detres');
         $('#cont').addClass('detares');
         $('#con').addClass('detalres');
@@ -28,7 +28,7 @@ $(window).resize (function() {
 });
 
 $(window).resize(function() {
-    if($(window).width() < 400) {
+    if($(window).width() < 500) {
         $('#offer').removeClass('marquee');
         $(".re").css("display", "none"); 
         $(".img1").css("width", "17%"); 
