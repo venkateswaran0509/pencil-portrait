@@ -3,7 +3,7 @@
 /*footer responsive*/
 
 $(window).resize (function() {
-    if($(window).width() < 500) {
+    if($(window).width() < 400) {
         $('#contact').addClass('detres');
         $('#cont').addClass('detares');
         $('#con').addClass('detalres');
@@ -30,14 +30,15 @@ $(window).resize (function() {
 $(window).resize(function() {
     if($(window).width() < 400) {
         $('#offer').removeClass('marquee');
-        $("li").css("display", "none"); 
+        $(".re").css("display", "none"); 
         $(".img1").css("width", "17%"); 
-        $(".res").css("display", "inline"); 
-       
+        
+        $(".dropdown").css("display", "inline"); 
         
        
     }else{
     	  $('#mar').addClass('marquee');
+    	 
       
     }
     
